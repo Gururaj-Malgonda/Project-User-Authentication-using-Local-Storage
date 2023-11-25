@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Signup</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body class="main">
+    <div class="signupCard">
+      <p class="welcome">Welcome back!</p>
+      <h2 class="signup">Sign up to your account</h2>
+
+      <form id="signupForm">
+        <div class="nameField">
+          <label for="userName">Your name</label><br />
+          <input id="userName" type="text" placeholder="Your full name" />
+        </div>
+        <div class="emailfield">
+          <label for="userEmail">Your email</label><br />
+          <input id="userEmail" type="email" placeholder="Your email ID" />
+        </div>
+        <div class="passfield">
+          <label for="userPass">Password</label><br />
+          <input id="userPass" type="password" placeholder="Min 8 characters"  />
+        </div>
+        <div class="cnfPassfield">
+          <label for="userCnfPass">Confirm Password</label><br />
+          <input id="userCnfPass" type="password" />
+        </div>
+        <p id="passwordMatchMessage"></p>
+        <div class="buttonField">
+          <button type="submit"><b>CONTINUE</b></button>
+        </div>
+      </form>
+
+      <div id="signupMessage"></div>
+
+      <p style="font-size: 12px; text-align: center">
+        Dont have an account? <a href="#">Sign up</a>
+      </p>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
